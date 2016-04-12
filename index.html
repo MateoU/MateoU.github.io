@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/blog.css">
+      <link rel="icon" href="data:;base64,iVORwOKGgo">
+      
+            
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper" id="scroll">
+                    <a href="#" class="brand-logo">Blog</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home <span class="new badge" id="tato"><script id="badge-template" type="text/x-handlebars-template">{{badgething}}</script></span></a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                    <ul id="slide-out" class="side-nav">
+                        <li>
+                            <div id="potatos" class="blog-post-list">
+                                <script id="title-template" type="text/x-handlebars-template">
+                                    <h5 id="blog-post-bar">Blog Posts</h5>
+                                    {{#each posts}}
+                                        <div class="blog-post">
+                                            <blockquote class="blockquote"><a class="blog-post-title" id={{title}} href=#{{title}}>{{title}}</a></blockquote>
+                                        </div>
+                                    {{/each}}
+
+                                </script>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <h1 class="center-align">My Blog</h1>
+                </div>
+                
+                <div class="row">
+                    <div class="col s12 main-container">
+                        
+                    </div>
+                </div> 
+            </div>
+        </main>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4 id="hiThere"></h4>
+              <p></p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="container">
+                <p><a href="#scroll">Back to the top</a></p>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    @2016 Mateo
+                </div>
+            </div>
+        </footer>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/handlebars-v4.0.5.js" type="text/javascript"></script>
+      <script type="text/javascript" src="libs/backendless.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/blog.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>      
+      <script type="text/javascript" src="css/secret.js"></script>
+      <script id="blogs-template" type="text/x-handlebars-template">
+          {{#each posts}}
+            <div class="blog-post">
+                <h2 class="blog-post-title" id="{{title}}">{{title}}</h2>
+                <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
+                <div>{{{content}}}</div>
+            </div>
+          {{/each}}
+      </script>
+      
+    </body>
+  </html>

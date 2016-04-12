@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+}
+main {
+    flex: 1 0 auto;
+}
+
+/*Blog Posts*/
+
+.blog-post {
+    margin-bottom: 60px;
+}
+
+.blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.blog-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+    font-style: italic;
+}
+
+.nav-wrapper {
+    background-color: #0089ec;
+}
+
+.page-footer {
+    background-color: #0089ec;
+}
+
+.container > p > a {
+    color: white;
+}
+
+.container > p > a:hover {
+    transition: all 0.3s ease;
+    color: #00E676;
+}
+
+.brand-logo {
+    color: #00E676;
+    left: 50%;
+}
+
+center-align {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#currentUser {
+    color: #999;
+    font-style: italic;
+}
+
+.blockquote:hover {
+    border-left:5px solid #00E676;
+    transition: all 0.3s ease;
+    color: black;
+    background-color: white;
+}
+
+.blockquote > a {
+    color: gray;
+    font-size: 0.9em;
+}
+
+#blog-post-bar {
+    color: darkgray;
+    border-bottom:2px solid #00E676;
+}
