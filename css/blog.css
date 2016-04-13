@@ -2,7 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Courier New', sans-serif;
 }
 main {
     flex: 1 0 auto;
