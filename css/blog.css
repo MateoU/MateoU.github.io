@@ -25,14 +25,6 @@ main {
     font-style: italic;
 }
 
-.nav-wrapper {
-    background-color: #0089ec;
-}
-
-.page-footer {
-    background-color: #0089ec;
-}
-
 .container > p > a {
     color: white;
 }
@@ -71,4 +63,12 @@ center-align {
 #blog-post-bar {
     color: darkgray;
     border-bottom:2px solid #00E676;
+}
+
+.badge {
+    background-color: #00E676;
+}
+
+#title {
+    border-bottom-color: #0059bc;
 }
