@@ -5,7 +5,7 @@ $(function () {
         
     Backendless.initApp(APPLICATION_ID, SECRET_KEY, VERSION);
     
-    var postsCollection = Backendless.Persistence.find(Posts).find();
+    var postsCollection = Backendless.Persistence.of(Posts).find();
     
     console.log(postsCollection);
     
