@@ -12,6 +12,8 @@ main {
 
 .blog-post {
     margin-bottom: 60px;
+    width: 700px;
+    background-color: white;
 }
 
 .blog-post-title {
