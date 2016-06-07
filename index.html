@@ -13,7 +13,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body>
+    <body class="grey lighten-3">
         <header>
             <nav>
                 <div class="nav-wrapper light-blue darken-1" id="scroll">
@@ -83,7 +83,7 @@
       <script type="text/javascript" src="css/secret.js"></script>
       <script id="blogs-template" type="text/x-handlebars-template">
           {{#each posts}}
-            <div class="blog-post">
+            <div class="blog-post z-depth-2">
                 <h2 class="blog-post-title" id="{{title}}">{{title}}</h2>
                 <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
                 <div>{{{content}}}</div>
